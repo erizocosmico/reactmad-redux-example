@@ -1,12 +1,20 @@
 require('babel/polyfill');
 import React from 'react';
 import { Provider } from 'react-redux';
+import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
 
 import Timeline from './components/Timeline';
 import store from './store';
 React.render(
-  <Provider store={store}>
-    {() => <Timeline />}
-  </Provider>,
+  (
+    <div>
+      <Provider store={store}>
+        {() => <Timeline />}
+      </Provider>
+      <DebugPanel right>
+        <DevTools store={store} monitor={LogMonitor} />
+      </DebugPanel>
+    </div>
+  ),
   document.body
 );

@@ -1,5 +1,5 @@
 require('babel/polyfill');
-import React from 'react/addons';
+import React from 'react';
 import { Provider } from 'react-redux';
 
 import Timeline from './components/Timeline';

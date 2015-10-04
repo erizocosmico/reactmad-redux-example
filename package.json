@@ -37,6 +37,7 @@
   "dependencies": {
     "react": "^0.13.3",
     "react-redux": "^3.0.1",
-    "redux": "^3.0.2"
+    "redux": "^3.0.2",
+    "redux-devtools": "^2.1.5"
   }
 }

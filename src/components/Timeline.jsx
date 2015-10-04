@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import Form from './Form';
 import Twist from './Twist';
-import { favorite, retwist } from './actions/twist';
+import { favorite, retwist } from '../actions/twist';
 
 const Timeline = React.createClass({
   onFav(id) {

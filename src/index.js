@@ -1,3 +1,4 @@
+require('../style/style.less');
 require('babel/polyfill');
 import React from 'react';
 import { Provider } from 'react-redux';
@@ -11,7 +12,7 @@ React.render(
       <Provider store={store}>
         {() => <Timeline />}
       </Provider>
-      <DebugPanel right>
+      <DebugPanel right top bottom>
         <DevTools store={store} monitor={LogMonitor} />
       </DebugPanel>
     </div>

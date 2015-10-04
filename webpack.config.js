@@ -30,6 +30,10 @@ module.exports = {
       {
         test: /\.(less|css)$/,
         loader: "style!css!less"
+      },
+      {
+        test: /\.(eot|ttf|woff|svg)$/,
+        loaders: ['file']
       }
     ]
   }

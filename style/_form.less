@@ -1,0 +1,44 @@
+.twist__form {
+  padding: 1em;
+  text-align: right;
+
+  textarea {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid @divider;
+    margin-bottom: 1em;
+    padding: .6em;
+    text-align: left;
+    transition: all 200ms ease-in-out;
+
+    &:hover, &:active {
+      border-color: lighten(@btn, 25%);
+    }
+  }
+
+  span.character-count {
+    margin-right: 1em;
+    font-weight: bold;
+    color: @text-info;
+
+    &.red {
+      color: crimson;
+    }
+  }
+
+  button {
+    background-color: @btn;
+    border-radius: 4px;
+    border: 1px solid darken(@btn, 15%);
+    color: white;
+    padding: .5em 1em;
+    letter-spacing: .05em;
+    box-shadow: 0 1px 0 lighten(@btn, 10%) inset;
+    transition: all 200ms ease-in;
+
+    &:hover {
+      background-color: lighten(@btn, 5%);
+    }
+  }
+}

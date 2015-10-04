@@ -15,7 +15,7 @@ const Timeline = React.createClass({
   },
 
   render() {
-    const twists = this.props.twists.map(function (t) {
+    const twists = this.props.twists.map(t => {
       return (
         <Twist twist={t} key={t.id}
           retwist={() => this.onRetwist(t.id)}
@@ -25,9 +25,11 @@ const Timeline = React.createClass({
 
     return (
       <div className='timeline'>
-        <Form />
-        <div className='twist-list'>
-          {twists}
+        <div className='wrap'>
+          <Form />
+          <div className='twist-list'>
+            {twists}
+          </div>
         </div>
       </div>
     );

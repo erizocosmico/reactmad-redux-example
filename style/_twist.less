@@ -1,0 +1,55 @@
+@import '_colors';
+
+.twist {
+  padding: 1em 1em 1.6em 1em;
+  border-top: 1px solid @divider;
+
+  p {
+    color: lighten(@text, 20%);
+  }
+}
+
+.twist__avatar {
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+  background-color: @btn;
+  float: left;
+  margin-right: 1em;
+}
+
+.twist__username {
+  color: @text;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+
+.twist__date {
+  float: right;
+  color: @text-info;
+  font-size: .9em;
+  margin-top: -1.2em;
+}
+
+.retwist, .fav {
+  float: right;
+  margin-top: -.5em;
+  color: @btn-actions-inactive;
+  background: transparent;
+  border: none;
+  padding: .4em;
+  margin-left: 1em;
+  font-size: 1.1em;
+
+  &:hover {
+    color: darken(@btn-actions-inactive, 15%);
+  }
+}
+
+.fav.faved {
+  color: @fav;
+}
+
+.retwist.retwisted {
+  color: green;
+}

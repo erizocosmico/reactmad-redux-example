@@ -5,7 +5,7 @@ import Form from './Form';
 import Twist from './Twist';
 import { favorite, retwist } from '../actions/twist';
 
-const Timeline = React.createClass({
+export const Timeline = React.createClass({
   onFav(id) {
     this.props.dispatch(favorite(id));
   },

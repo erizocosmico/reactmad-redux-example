@@ -51,7 +51,7 @@ describe('Twist Component', () => {
     });
 
 
-    it('should call addTodo', () => {
+    it('should call fav', () => {
         const { output, props } = setup();
         let fav = output.props.children[5];
         fav.props.onClick();

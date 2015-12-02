@@ -5,19 +5,19 @@
 
   <testsuite name="browser"
     errors="0" failures="0" hostname="" id="" package="browser" skipped="0"
-    tests="3" time="0.000" timestamp="Mon, 30 Nov 2015 15:19:43 GMT">
+    tests="3" time="0.000" timestamp="Mon, 30 Nov 2015 19:17:28 GMT">
   
-    <testcase name="Twist Loads" time="4.252" assertions="1">
+    <testcase name="Twist Loads" time="4.658" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Characters remaining is updated" time="5.401" assertions="1">
+    <testcase name="Characters remaining is updated" time="5.158" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Twist sent" time="6.808" assertions="2">
+    <testcase name="Twist sent" time="6.422" assertions="2">
 
     
 

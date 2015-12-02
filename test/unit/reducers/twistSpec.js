@@ -2,7 +2,7 @@ import {assert} from 'chai'
 import * as actions from '../../../src/actions/twist'
 import reducer from '../../../src/reducers/twist';
 
-describe('form reducer', () => {
+describe('twist reducer', () => {
     it('should return the initial state', () => {
         assert.deepEqual(reducer(undefined, {}), []);
     });

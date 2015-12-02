@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { newTwist } from '../actions/twist';
 import { inputChanged } from '../actions/form';
 
-const Form = React.createClass({
+export const Form = React.createClass({
   onSubmit(e) {
     e.preventDefault();
     const text = this.props.form.text;
